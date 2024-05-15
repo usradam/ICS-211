@@ -1,0 +1,29 @@
+boolean add():
+Best case: The best case is O(1) constant time. This may occur when you add an element to 
+an empty list (size == 0), in which case you just assign head and tail to newNode.
+
+Average case: The average case is O(n) linear time. This can occur when traversing the list and finding the
+correct position for an element in the middle of the list. Given some large n number of elements in a list, it is not likely
+that in many cases you will be inserting a new element at the beginning or end of the list, so for some given number
+of iterations that the code runs, there will be some traversing in the list to compare the value of the elements and 
+insert the new element in its correct position.
+
+Worst case: The worst case is O(n) linear time. This may occur under the default case, in which
+you are traversing the list and a new element must be inserted in the middle. This is worsened if 
+the loop needs to iterate until the second-to-last position to put the new element in its correct position.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+boolean remove():
+Best case: The best case is O(1) constant time. This may occur when you find the element you want to remove at the beginning of the 
+list (or the head). The removing of the element and update of the head takes a constant number of operations. Then if the list becomes
+empty as a result, the code updates the tail in constant time as well.
+
+Average case: The average case is O(n) linear time. In this case you need to traverse the list to find the specific element that needs
+to be removed. This element may be somewhere within the middle of the list since for some n number of elements and for some n number of 
+times the code runs, it is most likely that the element you would want to be removed is not at the head but in the middle. This involves 
+an iteration for the size of the list, which takes linear time.
+
+Worst case: The worst case is O(n) linear time. This may occur when you do not find the value you are looking for in the list. In such a case,
+you would iterate through the entire list to determine if the desired value to remove is not present. Traversing the entire list would take linear time,
+which would be a worse O(n) time than if you would just iterate half way through the list as would be the case for the average case time complexity.

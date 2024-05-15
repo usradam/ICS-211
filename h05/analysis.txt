@@ -1,0 +1,17 @@
+For printInt, when toPrint >= base, you perform a recursive call with toPrint / base 
+and some operations of toPrint % base. The recursive call is performed until toPrint 
+becomes less than base. The number of recursive calls depends on how many times you 
+can divide toPrint by base until it's less than base. This number of divisions is roughly 
+log n. So, the number of recursive calls is O(log n), since each call reduces toPrint by 
+around half.
+
+
+
+Runtime of fibonacci:
+Time complexity: O(2^N)
+
+fib3(35) = 2171 ms
+fib3(36) = 5106 ms
+fib3(37) = 9044 ms
+fib3(38) = 14149 ms
+fib3(39) = 26964 ms

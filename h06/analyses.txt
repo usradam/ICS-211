@@ -1,0 +1,40 @@
+boolean add() method:
+Best case O(1): The best case occurs when case occurs when you append an element at the end of the array 
+without the need to resize. In this case, there is no need for Arrays.copyOf to run.
+
+Average case O(1): The average case occurs for some size array, in which case when there is enough space in
+the array to add a new element. Thus, the element just needs to be appended to the end of the array, taking constant
+time with no need to resize the current array.
+
+Worst case O(n): The worst case occurs when size == array.length in which you need to do Arrays.copyOf to
+resize the array and copy all elements to the larger array. This operation will take linear time.
+
+
+void add() method:
+Best case: O(1) when there are 0 iterations in the 'for' loop and the 'if' loop does not run. This occurs
+when the shifting of the elements is not necessary. No shifting can occur when the list is empty and 
+you are adding the first element to index 0. Thus, no elements need to be shifted. Also if index - offset == size,
+then the for loop does 0 iterations, in which case the element is added at the end of the array and no shifting
+is required.
+
+Worst case: O(n) when the size == array.length and when an element is being added at index 0. Here, the 
+Arrays.copyOf will be executed, which creates a new array of double the size and copies all elements from 
+the old array to the new one. Also, all existing elements will need to be shifted rightward one position. These
+take linear time.
+
+Average case: O(n) in which for wherever in the array, a shift will occur depending on the size (amount of elements
+in the array). In any case where an element is being appended within the array, the shifting that will occur takes linear
+time.
+
+
+E remove() method:
+Best case: O(1) where the index being removed is at the end. In that case, the last index is accessed and the other elements
+in the array do not need to be shifted. Thus, constant time.
+
+Worst case: O(n) when the index is 0. In this case, the first element in the array is removed resulting in all the elements
+in the array needing to be shifted leftward, taking linear time.
+
+Average case: O(n) where for any index within some size array is accessed and the element at that index is removed. In this
+scenario, the removal of the element at the given index will cause a shift leftward for the other elements to fill up the
+gap in the array, taking linear time.
+
