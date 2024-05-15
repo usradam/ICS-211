@@ -8,8 +8,6 @@ import java.util.LinkedList;
  * You will need to determine what hash function to use, you can look at
  * "https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#hashCode()" for a way to get an index
  * from any object in java.
- *
- * Email Benjynstrauss@gmail.com or bnstraus@hawaii.edu if you have questions
  * 
  * @author Adam Graham
  *
