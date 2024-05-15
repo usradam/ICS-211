@@ -1,4 +1,4 @@
-package edu.ics211.h01;
+package h01;
 
 public class Roots {
 

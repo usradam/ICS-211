@@ -1,4 +1,4 @@
-package edu.ics211.h01;
+package h01;
 
 import java.io.File;
 import java.io.FileNotFoundException;
