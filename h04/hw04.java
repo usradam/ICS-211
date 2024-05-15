@@ -2,7 +2,7 @@ package h04;
 
 
 public class hw04 {
-	/* @authors: esb@hawaii.edu, 2023 & adamgra@hawaii.edu, 2023 */
+	/* @authors: Edo Biagioni, 2023 & Adam Graham, 2023 */
 
 	  enum SortType {
 	    SelectionSort,
